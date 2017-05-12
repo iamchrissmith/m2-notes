@@ -6,6 +6,9 @@
 # Databse Commands
 1. `rake db:create`
 2. `rake db:migrate`
+3. `rake db:seed`
+
+Can combine commands such as: `rake db:{create,migrate,seed}` (must *not* have spaces inside the hash)
 
 Rollback migration: `rake db:rollback`
 [Good list of descriptions](http://stackoverflow.com/a/10302357/6761672)

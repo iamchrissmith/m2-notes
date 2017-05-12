@@ -1,3 +1,9 @@
+`rails c` = `rails console`
+ * will have to restart anytime you edit files in your project(to see changes)
+
+`rails server`
+ * will have to restart if you add a directory to your project (to see changes)
+
 # create new rails app
 `rails new [dir_name] -d postgresql`
 
@@ -19,6 +25,12 @@ create migrations and models:
 * default to `string` type if you don't specify column types
 * make sure you include timestamps if you want them on the table
 
+(`rails g migration` is shorthand for `rails generate migration`)
+
 Remove a migration: `rails destroy migration [name of migrations]`
 
+`rails g model [name of the model] [first column:type]`
+to relate to the model to an existing model:
+`rails g model ... [column]:references`
+ * This creates the model and creates the migration for us
 

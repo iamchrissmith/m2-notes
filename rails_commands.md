@@ -16,6 +16,8 @@
 
 Can combine commands such as: `rake db:{create,migrate,seed}` (must *not* have spaces inside the hash)
 
+You (generally) don't need to run rake `db:test:prepare`; running `rake test` will load the schema to the test database
+
 Rollback migration: `rake db:rollback`
 [Good list of descriptions](http://stackoverflow.com/a/10302357/6761672)
 

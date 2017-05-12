@@ -15,10 +15,9 @@ Rollback migration: `rake db:rollback`
 
 # One-To-Many Relationships
 create migrations and models:
-`rails generate migration [name of migrations] [first column:type] ... `
-
-    * default to `string` type if you don't specify column types
-    * make sure you include timestamps if you want them on the table
+`rails generate migration [name of migrations] [first column:type] ...`
+* default to `string` type if you don't specify column types
+* make sure you include timestamps if you want them on the table
 
 Remove a migration: `rails destroy migration [name of migrations]`
 
